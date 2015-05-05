@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://www.piotrgorak.pl/wordpress/xmlrpc.php">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons font support for IE6-7  -->
+    <!--[if lt IE 8]>
+    <script src="http://www.piotrgorak.pl/wordpress/wp-content/themes/customizr/inc/assets/css/fonts/lte-ie7.js"></script>
+    <![endif]-->
+    <title>Piotr Górak | Strona oparta na wordpressie</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+
+    <link href="css/tc_common.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript"
+            src="js/jquery-migrate.min.js"></script>
+
+    <script type="text/javascript" src="js/tc-scripts.min.js"></script>
+
+    <!--Icons size hack for IE8 and less -->
     <!--[if lt IE 9]>
+    <link href="http://www.piotrgorak.pl/wordpress/wp-content/themes/customizr/inc/assets/css/fonts/ie8-hacks.css"
+          rel="stylesheet" type="text/css"/>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css"></style>
 </head>
 <body>
 
@@ -35,42 +49,151 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">LOGO</a>
+            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="Logo"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
                 <li><a href="#">Label</a></li>
                 <li><a href="#about">Label</a></li>
                 <li><a href="#contact">Label</a></li>
-                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#" class="przyciskSignIn" style="color: #F7FDFE">Sign in</a>
             </ul>
         </div>
         <!--/.nav-collapse -->
     </div>
 </nav>
 
-<div class="container">
+<section class="container-fluid" id="pierwszy">
+    <div class="shadow"></div>
+    <div class="wrapper">
+        <div id="headerWrapper">
+            <div class="glyphicon glyphicon-star"></div>
+            <h1> Our Mission</h1>
 
-    <!-- Main component for a primary marketing message or call to action -->
+            <div class="glyphicon glyphicon-star"></div>
+        </div>
+        <p style="display: block; margin-bottom: 0">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        </p>
 
-    <h1>&#9733; Our Mission &#9733;</h1>
-<div class="wrapper">
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy
-        text ever since the 1500.
-    </p>
+        <p>has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+</section>
+
+<section class="container-fluid row vertical-center" id="drugi">
+
+    <div class="col-lg-12">
+        <h1>About</h1>
+
+        <div class="about">
+            <p style="margin-bottom: 0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum</p>
+
+            <p>has been the
+                industry's
+                standard dummy text ever since the 1500s, when an unknown.</p>
+        </div>
+    </div>
+</section>
+<div id="main-wrapper" class="container">
+    <div class="container marketing">
+
+        <div class="row widget-area" role="complementary">
+            <div class="span4 fp-one">
+                <div class="widget-front">
+                    <div class="thumb-wrapper ">
+                        <a class="round-div"
+                           href="http://www.piotrgorak.pl/wordpress/portfolio/"
+                           title="Portfolio"></a>
+                        <img width="270" height="250"
+                             src="img/web-270x250.jpg"
+                             class="attachment-tc-thumb tc-thumb-type-thumb wp-post-image wp-post-image h-centered"
+                             alt=""
+                             style="height: 250px; width: auto; left: 2px; top: 1px;">
+                    </div>
+                    <h2>Portfolio <span class="edit-link btn btn-inverse btn-mini"><a class="post-edit-link"
+                                                                                      href="http://www.piotrgorak.pl/wordpress/wp-admin/post.php?post=9&action=edit"
+                                                                                      title="edytuj"
+                                                                                      target="_blank">edytuj</a></span>
+                    </h2>
+
+                    <p class="fp-text-one"></p><a class="btn btn-primary fp-button"
+                                                  href="http://www.piotrgorak.pl/wordpress/portfolio/"
+                                                  title="Portfolio">zobacz więcej </a>
+                </div>
+                <!-- /.widget-front -->
+
+            </div>
+            <div class="span4 fp-two">
+                <div class="widget-front">
+                    <div class="thumb-wrapper ">
+                        <a class="round-div"
+                           href="http://www.piotrgorak.pl/wordpress/about/"
+                           title="Kontakt"></a>
+                        <img width="270" height="250"
+                             src="img/screencapture-piotrgorak-pl1-270x250.png"
+                             class="attachment-tc-thumb tc-thumb-type-thumb wp-post-image wp-post-image h-centered"
+                             alt="screencapture-piotrgorak-pl"
+                             style="height: 250px; width: auto; left: 2px; top: 1px;">
+                    </div>
+                    <h2>Kontakt <span class="edit-link btn btn-inverse btn-mini"><a class="post-edit-link"
+                                                                                    href="http://www.piotrgorak.pl/wordpress/wp-admin/post.php?post=2&action=edit"
+                                                                                    title="edytuj"
+                                                                                    target="_blank">edytuj</a></span>
+                    </h2>
+
+                    <p class="fp-text-two"></p><a class="btn btn-primary fp-button"
+                                                  href="http://www.piotrgorak.pl/wordpress/about/"
+                                                  title="Kontakt">zobacz
+                    więcej </a>
+                </div>
+                <!-- /.widget-front -->
+
+            </div>
+            <div class="span4 fp-three">
+                <div class="widget-front">
+                    <div class="thumb-wrapper "><a class="round-div"
+                                                   href="http://www.piotrgorak.pl/wordpress/system-logowania/"
+                                                   title="System logowania"></a>
+                        <img width="270" height="250"
+                             src="img/screencapture-piotrgorak-pl5-270x250.png"
+                             class="attachment-tc-thumb tc-thumb-type-thumb wp-post-image wp-post-image h-centered"
+                             alt="screencapture-piotrgorak-pl"
+                             style="height: 250px; width: auto; left: 2px; top: 1px;">
+                    </div>
+                    <h2>System logowania <span class="edit-link btn btn-inverse btn-mini"><a
+                            class="post-edit-link"
+                            href="http://www.piotrgorak.pl/wordpress/wp-admin/post.php?post=28&action=edit"
+                            title="edytuj"
+                            target="_blank">edytuj</a></span>
+                    </h2>
+
+                    <p class="fp-text-three"></p><a class="btn btn-primary fp-button"
+                                                    href="http://www.piotrgorak.pl/wordpress/system-logowania/"
+                                                    title="System logowania">zobacz więcej </a>
+                </div>
+                <!-- /.widget-front -->
+
+            </div>
+        </div>
+    </div>
+    <!-- .container -->
+
+
 </div>
 
+<div class="row">
+    WORK WITH US
 </div>
+
 <!-- /container -->
-
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <script src="js/bootstrap.min.js"></script>
+<!--<script src="js/tc-scripts.min.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>

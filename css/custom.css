@@ -1,22 +1,199 @@
+#drugi {
+    height: 200px;
+    margin: auto;
+
+}
+
+.thumb-wrapper {
+    width: 269px;
+    max-width: 100%;
+    height: 250px;
+    position: relative;
+    left: -1px;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+#john {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url(../img/john.png) no-repeat;
+    -webkit-transition: 1s;
+    transform: scale(1);
+
+}
+#john:hover {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url(../img/john.png) no-repeat;
+    transition: 1s ;
+    transform: scale(1.5) ;
+}
+
+#john2 {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url(../img/john2.png) no-repeat;
+}
+
+#john3 {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url(../img/john3.png) no-repeat;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+#headerWrapper {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vertical-center {
+    min-height: 250px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#pierwszy {
+    background-image: url(../img/mountains.png);
+    height: 600px;
+    margin-top: 13px;
+    position: relative;
+}
+
+.glyphicon {
+    top: 5px;
+}
+
+.about {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.navbar {
+    background-color: #F7FDFE;
+    height: 86px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand > img {
+    margin-top: 12px;
+}
+
+.przyciskSignIn {
+    background: url(../img/btn.png) no-repeat center;
+    text-align: center;
+    width: 128px;
+}
+
+.shadow {
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    max-height: 600px;
+    min-height: 600px;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 body {
     min-height: 2000px;
     padding-top: 70px;
 }
 
-ul.nav > li {
-    text-transform: uppercase;
+div.wrapper {
+    bottom: 20%;
+    color: #ffffff;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 50%;
+    z-index: 2;
 }
 
 h1 {
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-div.wrapper>p {
-    text-align: center;
-    margin: auto;
-    width: 50%;
+li {
+    padding-right: 15px;
 }
-nav>div{
-    height: 600px;
-    background-image: url("../img/mountains.png");
+
+nav > div {
+    margin-top: 18px;
+}
+
+section[id=drugi] h1 {
+    color: #0EBFDD;
+    margin-top: 0;
+}
+
+section[id=trzeci] h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+#trzeci {
+    background-color: #0EBFDD;
+    height: 500px;
+}
+
+ul.nav > li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand > img {
+        margin-left: 15px;
+    }
 }
