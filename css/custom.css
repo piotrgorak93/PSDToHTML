@@ -16,45 +16,30 @@
     text-align: center;
     margin: auto;
 }
-
-#john {
+.johnCenter{
+    width: 156px;
+    padding: 0;
+    display: inline;
+}
+.john {
     width: 156px;
     height: 156px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    background: url(../img/john.png) no-repeat;
     -webkit-transition: 1s;
     transform: scale(1);
 
 }
-#john:hover {
-    width: 156px;
-    height: 156px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background: url(../img/john.png) no-repeat;
-    transition: 1s ;
-    transform: scale(1.5) ;
-}
 
-#john2 {
+.john:hover {
     width: 156px;
     height: 156px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    background: url(../img/john2.png) no-repeat;
-}
-
-#john3 {
-    width: 156px;
-    height: 156px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background: url(../img/john3.png) no-repeat;
+    transition: 1s;
+    transform: scale(1.5);
 }
 
 .grow {
@@ -103,11 +88,8 @@
     top: 5px;
 }
 
-.about {
-    width: 50%;
-    margin: auto;
+#about {
     text-align: center;
-    display: block;
 }
 
 .navbar {
@@ -184,7 +166,12 @@ section[id=trzeci] h1 {
 
 #trzeci {
     background-color: #0EBFDD;
-    height: 500px;
+    height: 600px;
+}
+
+#personWrapper {
+    margin: auto;
+    display: inline;
 }
 
 ul.nav > li {
@@ -196,4 +183,15 @@ ul.nav > li {
     .navbar-brand > img {
         margin-left: 15px;
     }
+}
+
+.name {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.position {
+    font-style: italic;
+    font-weight: normal;
 }
