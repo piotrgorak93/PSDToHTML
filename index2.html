@@ -56,69 +56,91 @@
         <div id="navbar" class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
                 <li><a href="#">Label</a></li>
-                <li><a href="#about">Label</a></li>
-                <li><a href="#contact">Label</a></li>
-                <li><a href="#" class="przyciskSignIn" style="color: #F7FDFE">Sign in</a>
+                <li><a href="#drugi">About</a></li>
+                <li><a href="#trzeci">Team</a></li>
+                <li><a href="#czwarty">Mapa</a></li>
+                <li><a class="przyciskSignIn" href="#" role="button">Sign in</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
     </div>
 </nav>
-<section class="container-fluid" id="pierwszy">
-    <div class="shadow"></div>
-    <div class="wrapper">
-        <div id="headerWrapper">
-            <div class="glyphicon glyphicon-star"></div>
-            <h1> Our Mission</h1>
+<section id="pierwszy">
+    <div class="container-fluid">
+        <div class="shadow"></div>
+        <div class="wrapper">
+            <div id="headerWrapper">
+                <div class="glyphicon glyphicon-star"></div>
+                <h1> Our Mission</h1>
 
-            <div class="glyphicon glyphicon-star"></div>
-        </div>
-        <p style="display: block; margin-bottom: 0">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-        </p>
+                <div class="glyphicon glyphicon-star"></div>
+            </div>
+            <p style="display: block; margin-bottom: 0">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            </p>
 
-        <p>has been the industry's standard dummy text ever since the 1500s.</p>
-    </div>
-</section>
-<section class="container-fluid vertical-center" id="drugi">
-
-    <div class="row">
-        <h1 class="col-xs-12">About</h1>
-
-        <div id="about" class="col-xs-12">
-
-            <p style="margin-bottom: 0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum</p>
-
-            <p>has been the
-                industry's
-                standard dummy text ever since the 1500s, when an unknown.</p>
-
+            <p>has been the industry's standard dummy text ever since the 1500s.</p>
         </div>
     </div>
-
 </section>
+<section id="drugi">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="col-xs-12">About</h1>
 
-<section class="container-fluid" id="trzeci"
-         ng-controller="MainController">
+            <div id="about" class="col-xs-12">
 
-    <div class="col-xs-12" style="padding-top: 5%">
-        <h1>Team</h1>
-    </div>
-    <div class="col-md-3"></div>
-    <div id="personWrapper" class="col-md-6">
-        <div ng-repeat="john in johns" class="col-md-4">
-            <div ng-style="{{john.path}}" class="john">
+                <p style="margin-bottom: 0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem
+                    Ipsum</p>
+
+                <p>has been the
+                    industry's
+                    standard dummy text ever since the 1500s, when an unknown.</p>
 
             </div>
-            <div class="name">{{john.name}}</div>
-            <div class="name position">{{john.position}}</div>
-
         </div>
     </div>
-    <div class="col-md-3"></div>
 </section>
 
+<section id="trzeci" ng-controller="MainController">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12" style="padding-top: 5%">
+                <h1>Team</h1>
+            </div>
+            <div class="col-md-3"></div>
+            <div id="personWrapper" class="row col-md-6">
+                <div ng-repeat="john in johns" class="col-xs-12 col-md-4">
+                    <div ng-style="{{john.path}}" class="john">
+
+                    </div>
+                    <p class="name" style="display: block">{{john.name}}</p>
+
+                    <p class="name position">{{john.position}}</p>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+        <div style="text-align: center">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+                <button class="przycisk" type="submit">Work with us</button>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+    </div>
+</section>
+<section id="czwarty">
+    <div class="container-fluid" style="padding-left:0;padding-right: 0;">
+        <div></div>
+        <h1>Dojazd</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.596176159915!2d15.528933000000006!3d51.94131900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470613cdf873f4c3%3A0x85285ab54bc7555c!2sWydzia%C5%82+Elektrotechniki%2C+Informatyki+i+Telekomunikacji!5e0!3m2!1spl!2spl!4v1431094251791"
+                width="100%" height="500px" frameborder="0" style="border:0">
+        </iframe>
+    </div>
+</section>
 <script src="js/angular/app.js"></script>
 <script src="js/angular/MainController.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

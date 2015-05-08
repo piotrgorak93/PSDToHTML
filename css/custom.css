@@ -1,9 +1,10 @@
 #drugi {
-    height: 200px;
+    height: 350px;
     margin: auto;
-
 }
-
+#czwarty{
+    height: 600px;
+}
 .thumb-wrapper {
     width: 269px;
     max-width: 100%;
@@ -16,11 +17,7 @@
     text-align: center;
     margin: auto;
 }
-.johnCenter{
-    width: 156px;
-    padding: 0;
-    display: inline;
-}
+
 .john {
     width: 156px;
     height: 156px;
@@ -29,6 +26,8 @@
     -moz-border-radius: 50%;
     -webkit-transition: 1s;
     transform: scale(1);
+    display: table;
+    margin: 0 auto;
 
 }
 
@@ -106,9 +105,15 @@
 }
 
 .przyciskSignIn {
-    background: url(../img/btn.png) no-repeat center;
+    background: url("../img/btn.png") no-repeat center;
     text-align: center;
     width: 128px;
+    color: #F7FDFE !important;
+}
+
+.przyciskSignIn:hover {
+    background: url("../img/btnhover.png") no-repeat center;
+
 }
 
 .shadow {
@@ -116,6 +121,16 @@
     left: 0;
     max-height: 600px;
     min-height: 600px;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.shadowBtn {
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
     padding-top: 50px;
     position: absolute;
     top: 0;
@@ -156,22 +171,31 @@ nav > div {
 
 section[id=drugi] h1 {
     color: #0EBFDD;
-    margin-top: 0;
+    margin-top: 20px;
+    padding-top: 5%;
+
+}
+section[id=czwarty] h1 {
+    color: #0EBFDD;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 }
 
 section[id=trzeci] h1 {
     color: #fff;
-    margin-top: 0;
+    margin-bottom: 5%;
 }
 
 #trzeci {
     background-color: #0EBFDD;
-    height: 600px;
+    height: 700px;
 }
 
 #personWrapper {
     margin: auto;
-    display: inline;
 }
 
 ul.nav > li {
@@ -189,9 +213,43 @@ ul.nav > li {
     color: #ffffff;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 0;
+}
+
+.john + .name {
+    margin-top: 10px;
 }
 
 .position {
     font-style: italic;
     font-weight: normal;
+}
+
+@media (max-width: 768px ) {
+    #trzeci {
+        height: 850px;
+    }
+}
+
+.przycisk {
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 15px;
+    background: #0EBFDD;
+    padding: 5px 20px 5px 20px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 175px;
+    margin-top: 25%;
+    font-weight: bold;
+}
+
+.przycisk:hover {
+    background: #3AD6F2;
+    text-decoration: none;
+    color: #ffffff;
 }
