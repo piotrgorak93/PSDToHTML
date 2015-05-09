@@ -95,7 +95,6 @@
 
 .navbar {
     background-color: #F7FDFE;
-    height: 86px;
 }
 
 .navbar-brand {
@@ -209,7 +208,30 @@ ul.nav > li {
 @media (max-width: 767px) {
     .navbar-brand > img {
         margin-left: 15px;
+        margin-top: 0;
     }
+
+    .navbar-toggle {
+        margin-top: -5px;
+    }
+
+    nav > div {
+
+        margin-top: 31px;
+    }
+
+    ul.navbar-nav > li {
+        text-align: center;
+    }
+
+    .przyciskSignIn {
+        margin: auto;
+    }
+
+    footer > div.container-fluid {
+        padding: 0;
+    }
+
 }
 
 .name {
@@ -259,7 +281,7 @@ ul.nav > li {
 
 footer {
     padding-top: 25px;
-    height: 200px;
+    height: 300px;
     background-color: #45494D;
     color: #ffffff;
     text-decoration: none;
@@ -293,10 +315,29 @@ footer li {
 .pierwszeStopka {
     color: #ffffff;
     font-weight: bold;
-    text-align: left;
-    padding-left: 0;
-    padding-top: 33px;
+    text-align: center;
     margin-bottom: 0;
+}
+
+@media all and (min-width: 767px) {
+    .pierwszeStopka {
+        padding-top: 33px;
+        padding-left: 0;
+
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    .navbar {
+        height: 86px;
+
+    }
+    .trzecieStopka li {
+        padding-right: 0;
+    }
+
 }
 
 .pierwszeStopka li {
@@ -311,6 +352,7 @@ footer li {
     .pierwszeStopka li a {
         width: 100%;
     }
+
 }
 
 .drugieStopka {
@@ -342,12 +384,20 @@ footer li {
     padding-left: 15px;
 }
 
-.trzecieStopka li {
-    padding-right: 0;
-}
 
 footer > div {
     width: 80%;
+}
+
+@media (max-width: 767px) {
+    .pipeline {
+        display: none;
+    }
+
+    .trzecieStopka li {
+        float: left;
+    }
+
 }
 
 .pipeline {
@@ -359,7 +409,6 @@ footer > div {
     height: 43px;
     margin: 0;
     text-align: right;
-    /*display: inline;*/
 }
 
 div.wrapper {
@@ -374,24 +423,13 @@ div.wrapper {
     z-index: 2;
 }
 
-/* We tell all items to be 100% width */
 .circle {
     flex: 1 100%;
 }
 
-/* We rely on source order for mobile-first approach
- * in this case:
- * 1. header
- * 2. nav
- * 3. main
- * 4. aside
- * 5. footer
- */
-
 .drugieStopka {
 
     display: flex;
-    /*flex-flow: row wrap;*/
     justify-content: flex-end;
 
 }
