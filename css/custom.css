@@ -284,7 +284,7 @@ footer li {
 }
 
 .line {
-    width: 80%;
+    width: 100%;
     margin: 30px auto 0;
     height: 1px;
     background: #73767A;
@@ -294,20 +294,104 @@ footer li {
     color: #ffffff;
     font-weight: bold;
     text-align: left;
+    padding-left: 0;
+    padding-top: 33px;
+    margin-bottom: 0;
 }
 
-.drugieStopka img {
-    border-radius: 50%;
-    border: 1px #ffffff;
+.pierwszeStopka li {
+    text-align: left;
+}
 
+.pierwszeStopka li a {
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .pierwszeStopka li a {
+        width: 100%;
+    }
+}
+
+.drugieStopka {
+    text-align: right;
+    padding-right: 0;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.drugieStopka li {
+    /*border-radius: 50%;*/
+    /*border: 1px #ffffff;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*padding-right: 0;*/
+    /*padding-left: 15px;*/
 }
 
 .trzecieStopka {
     color: #73767A;
+    float: right;
+    padding-right: 0;
     text-align: right;
 }
 
 .trzecieStopka a {
     color: #73767A;
     text-transform: capitalize;
+    padding-left: 15px;
+}
+
+.trzecieStopka li {
+    padding-right: 0;
+}
+
+footer > div {
+    width: 80%;
+}
+
+.pipeline {
+    padding-left: 15px;
+}
+
+.circle {
+    width: 42px;
+    height: 43px;
+    margin: 0;
+    text-align: right;
+    /*display: inline;*/
+}
+
+div.wrapper {
+    bottom: 20%;
+    color: #ffffff;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 50%;
+    z-index: 2;
+}
+
+/* We tell all items to be 100% width */
+.circle {
+    flex: 1 100%;
+}
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+.drugieStopka {
+
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: flex-end;
+
 }

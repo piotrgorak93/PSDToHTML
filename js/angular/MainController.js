@@ -20,6 +20,22 @@ app.controller('MainController', ['$scope', function ($scope) {
             name: "John Doe",
             position: "Investor"
         }
+    ];
+    $scope.circles = [
+        {
+            path: "{'background':'url(img/circlemail.png) no-repeat'}",
+            url: "mailto:piotrgorak93@gmail.com"
+        },
+
+        {
+            path: "{'background':'url(img/circlefacebook.png) no-repeat'}",
+            url: "http//facebook.com"
+        },
+
+        {
+            path: "{'background':'url(img/circletwitter.png) no-repeat'}",
+            url: "http//twitter.com"
+        }
 
     ]
 

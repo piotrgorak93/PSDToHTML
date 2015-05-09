@@ -141,26 +141,33 @@
         </iframe>
     </div>
 </section>
-<footer>
+<footer ng-controller="MainController">
     <div class="container-fluid">
         <div>
-            <ul class="pierwszeStopka">
+            <ul class="pierwszeStopka col-xs-12 col-md-6">
                 <li><a href="#pierwszy">About</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Work with us</a></li>
             </ul>
-            <ul class="drugieStopka">
-                <li><a href="mailto:piotrgorak93@gmail.com"></a></li>
-                <li><a href="http://facebook.com" target="_blank"></a></li>
-                <li><a href="http://twitter.com" target="_blank"></a></li>
+            <ul class="col-xs-12 col-md-6">
+                <div class="drugieStopka">
+                    <div ng-repeat="image in circles" class="col-xs-4 col-lg-2">
+
+                        <a href="{{image.url}}">
+                            <div ng-style="{{image.path}}" class="circle"></div>
+                        </a>
+                    </div>
+                </div>
             </ul>
-            <div class="line"></div>
-            <ul class="trzecieStopka">
-                <li><a href="#">Privacy policy</a></li>
-                <li>|</li>
-                <li><a href="#">Terms and conditions</a></li>
-                <li>|</li>
-                <li><a href="#">&copy; Company.LLC 2015</a></li>
+            <div class="line col-xs-12"></div>
+            <ul class="trzecieStopka col-xs-12">
+                <div style="padding-top: 15px;">
+                    <li><a href="#">Privacy policy</a></li>
+                    <li class="pipeline">|</li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li class="pipeline">|</li>
+                    <li><a href="#">&copy; Company.LLC 2015</a></li>
+                </div>
             </ul>
         </div>
     </div>
